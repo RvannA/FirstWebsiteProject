@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoWeb</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <header class="header">
+                <div class="list">
+                    <h1 class="logo"><u>logo</u></h1>
+                    <ul>
+                        <li><a href="#spacingTxtHeader">about</a></li>
+                        <li>more</li>
+                        <li>setting</li>
+                        <label id="login" for="clogin">login</label>
+                    </ul>
+                    <label class="navbarMobile" for="navbarActive">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <input type="checkbox" id="navbarActive" class="navbarActive">
+                    <div class="sideNavbar">
+                        <div class="listNavbar">
+                            <label for=""><a href="#spacingTxtHeader">about</a></label>
+                            <label for="">more</label>
+                            <label for="">setting</label>
+                            <label for="clogin">login</label>
+                        </div>
+                        <div class="closeSideNavbar"><label for="navbarActive">></label></div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="popUp">
+            <!-- checkbox  -->
+            <input type="checkbox" id="clogin">
+            <!-- end checkbox -->
+            
+            <div class="popUp_bg"></div>
+
+            <div class="loginPage">
+                <h2>Login</h2>
+                <div class="loginPopUp">
+                    <form>
+                        <table>
+                            <tr class="user-email-password">
+                                <td>
+                                    <input type="text" id="femail" class="form_email" autocomplete="off" placeholder=" ">
+                                    <label for="femail" class="lemail">Email </label>
+                                </td>
+                                <td>
+                                    <input type="password" id="fpassword" class="form_password" autocomplete="off" placeholder=" ">
+                                    <label for="fpassword" class="lpassword">Password</label>
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </table>
+                        <div class="closePopUp">
+                            <label for="">login</label>
+                            <label for="clogin">cancel</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="morePage">
+                <div class="morePopUp">
+                    <ul>
+                        <li>Instagram : </li>
+                        <li>Facebook : </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="middleText">
+                <h1 class="textRvann" id="Rvann" onclick="txtRvann()">Hello my name's Rvann</h1>
+                <h1 class="im">I'm a <span class="typed-text"></span><span class="cursorTxt"></span></h1>
+            </div>
+        </div>
+        <div class="headerActive"></div>
+
+        <!-- about text -->
+
+        <div class="spacingTextAndHeader"></div>
+
+        <div id="spacingTxtHeader"></div>
+        <div class="about">
+            <h1 id="about">about</h1><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ducimus est expedita porro. Eos tempora temporibus vel distinctio quae eveniet, officiis nesciunt in sapiente saepe, quidem similique cupiditate. Quam, dignissimos.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex, similique blanditiis illo error debitis perspiciatis reiciendis. Officia ex impedit, eum doloribus minima voluptatum eveniet? Obcaecati error facere unde maiores!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel tempora dolore nesciunt dolorem iusto ipsum mollitia quaerat blanditiis, soluta quasi tenetur veritatis quos odio voluptate voluptas, id delectus, magni ea?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, minus reprehenderit! Commodi libero quos explicabo dolorum at, id provident necessitatibus soluta fugit unde, minima ducimus nostrum eaque cum deleniti. Dolore.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus excepturi nam, dolore soluta illum perferendis sint unde eos perspiciatis. Natus nesciunt error vero molestias doloremque laboriosam delectus nemo voluptatum numquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ad distinctio tempore vitae sapiente quasi, natus nihil dignissimos veniam beatae quia, molestiae repellendus optio? Eius fuga cum odit illo. Rerum.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem magnam iure reiciendis qui facere provident ducimus totam minima a! Modi eos consectetur ullam similique ut nam repellendus rem perspiciatis. Ducimus.
+            </p>
+        </div>
+
+
+        <div class="background-color-end"></div>
+        <div class="developer">
+            <p>Development : _rvann._</p>
+        </div>
+    </div>
+</body>
+<script src="js/script.js">
+</script>
+</html>
