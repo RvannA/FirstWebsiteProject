@@ -206,3 +206,58 @@ body {
 }
 
 /* end login menu */
+
+
+
+
+
+
+
+
+/* responsif */
+
+@media screen and (max-width : 576px) {
+    .login-menu {
+        width: 350px;
+        height: 350px;
+    }
+    .login-menu-input div input {
+        width: 300px;
+    }
+    .login-menu-input div input:nth-child(2) {
+        margin-top: 40px;
+    }
+    .login-menu-input div label:nth-child(3) {
+        position: absolute;
+        left: 26px;
+        top: 123px;
+        color: var(--white);
+        text-transform: lowercase;
+    }
+    .login-menu-input div label:nth-child(4) {
+        position: absolute;
+        left: 26px;
+        top: 203px;
+        color: var(--white);
+        text-transform: lowercase;
+    }
+    .login-menu-input {
+        height: 150px;
+    }
+    .login-menu-button {
+        height: 120px;
+    }
+    .login-menu-button a {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* end responsif */

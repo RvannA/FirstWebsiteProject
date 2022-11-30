@@ -93,6 +93,104 @@ a {
     font-size: 35px;
 }
 
+/* hamburger */
+
+.mobile-navbar {
+    position: absolute;
+    right: 30px;
+    display: none;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35px;
+    width: 35px;
+}
+
+.hamburger span {
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 5px;
+    transition: .3s;
+}
+
+.mobile-navbar input {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.mobile-navbar-button {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark);
+    border-radius: 30px;
+    height: 400px;
+    width: 300px;
+    top:110px;
+    right: 10px;
+    transform: translateX(310px);
+    transition: .5s ease-in-out;
+}
+
+.mobile-navbar-button a {
+    padding: 40px;
+    transition: .3s;
+}
+
+.mobile-navbar-button a:nth-child(1) {
+    border-radius: 30px 30px 0 0;
+}
+
+.mobile-navbar-button a:nth-child(4) {
+    border-radius: 0 0 30px 30px;
+}
+
+.mobile-navbar-button a:nth-child(1):hover {
+    border-radius: 30px 30px 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-navbar-button a:nth-child(4):hover {
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-navbar-button a:nth-child(2):hover, a:nth-child(3):hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+}
+
+.mobile-navbar input:checked ~ .hamburger div {
+    transform: translateX(0);
+}
+
+.mobile-navbar input:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, -3px);
+    transform-origin: 0 0;
+}
+
+.mobile-navbar input:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7.5px, 3px);
+    transform-origin: 0 100%;
+}
+
+.mobile-navbar input:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+
+
+/* end hamburger */
+
+
+
 /* end header */
 
 
@@ -154,8 +252,7 @@ a {
 }
 
 .about div:nth-child(1) {
-    height: 100px;;
-    transform: translateY(-50px);
+    height: 200px;
 }
 
 .about h1 {
@@ -187,17 +284,31 @@ a {
 /* mobile */
 
 @media screen and (max-width : 576px) {
+    
+    /* typed text */
     .textRvann {
         font-size: 30px;
     }
-
+    
     .middleText h1:nth-child(2), .typed-text{
         font-size: 15px;
     }
-
+    
     .cursorTxt {
         height: 20px;
     }
+    /* end typed text */
+
+    /* navbar mobile */
+
+    .header ul {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+    /* end navbar mobile */
 }
 
 /* end responsive */
