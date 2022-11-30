@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+:root {
+    --dark : rgba(13,13,13);
+    --blue : #1A73E8;
+    --gray : #b1b1b1;
+    --white : white;
+}
+
+/* background */
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-color: #261935;
+}
+
+body {
+    color: var(--white);
+    cursor: default;
+}
+
+/* container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end container */
+
+/* end background */
+
+/* blur effect */
+
+.blur-effect {
+    height: 600px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+/* end blur effect */
+
+/* login menu */
+
+.login-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--dark);
+    border-radius: 25px;
+    width: 520px;
+    height: 520px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.192);
+}
+
+.login-menu h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    /* padding-top: 50px; */
+}
+
+.login-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.login-menu-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.login-menu-input div input {
+    width: 400px;
+    padding: 10px;
+    position: relative;
+    outline: none;
+    background: none;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    caret-color: var(--white);
+    color: var(--white);
+}
+
+.login-menu-input div input:nth-child(2) {
+    margin-top: 80px;
+}
+
+.login-menu-input div label:nth-child(3) {
+    position: absolute;
+    left: 60px;
+    top: 175px;
+    color: var(--white);
+    text-transform: lowercase;
+}
+
+.login-menu-input div label:nth-child(4) {
+    position: absolute;
+    left: 60px;
+    top: 295px;
+    color: var(--white);
+    text-transform: lowercase;
+}
+
+/* end login menu */
+
+
+
+
+
+
+
+/* input animation */
+
+.label-email,.label-password, #email, #password {
+    transition: .5s;
+}
+
+#email:focus ~ .label-email,
+#email:not(:placeholder-shown) ~ .label-email {
+    transform: translateY(-25px) translateX(-2px);
+    font-size: 15px;
+    padding: 5px;
+    text-transform: lowercase;
+    background-color: var(--dark);
+}
+
+#password:focus ~ .label-password,
+#password:not(:placeholder-shown) ~ .label-password {
+    transform: translateY(-25px) translateX(-2px);
+    font-size: 15px;
+    padding: 5px;
+    text-transform: lowercase;
+    background-color: var(--dark);
+}
+
+.login-menu-input div input:focus {
+    border: 2px solid var(--blue);
+}
+
+#password:focus ~ .label-password {
+    color: var(--blue);
+}
+
+#email:focus ~ .label-email {
+    color: var(--blue);
+}
+
+
+/* end input animation */
+
+
+
+
+
+
+
+
+
+.login-menu-button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 120px;
+}
+
+.login-menu-button a {
+    padding: 10px 20px;
+    position: relative;
+    right: 40px;
+}
+
+.login-menu-button a:nth-child(1) {
+    border-radius: 0 10px 10px 0;
+    background-color: var(--blue);
+    transition: .3s;
+}
+.login-menu-button a:nth-child(2) {
+    border-radius: 10px 0 0 10px;
+    background-color: #e81a1a;
+    transition: .3s;
+}
+.login-menu-button a:nth-child(1):hover {
+    background-color: #1152a7;
+}
+.login-menu-button a:nth-child(2):hover {
+    background-color: #a71111;
+}
+
+/* end login menu */
